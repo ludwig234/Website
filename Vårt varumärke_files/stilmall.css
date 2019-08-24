@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS dokument */
+
+a {
+  font-weight: bolder;
+  text-decoration: none;
+  font-family: "Segoe UI",Verdana;
+  color: #222222;
+
+}
+
+a:hover {
+  text-decoration: underline; 
+}
+
+body {
+  background-image: linear-gradient(steelblue, grey);
+  font-family: Verdana, helvetica, sans-serif;
+}
+
+footer {
+  display: block;
+  width: auto;
+  min-height: 200px;
+  background: lightsteelblue;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-left: 38px;
+  padding-right: 38px;
+  /* 
+  background: linear-gradient(#555, #111);
+  */
+}
+
+footer > ul > li > a {
+  color: #FFF;
+}
+
+footer > .plattor > li > a {
+  color: #FFF;
+  display: block;
+  text-align: center;
+  background: steelblue;
+  padding: 10px 0px 10px 0px;
+  margin: 5px 0px 5px 0px;
+  /*
+  border-radius: 25px; 
+  transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  */
+}
+/* Om fönstret är bredare än 1000 pixlar så flytta menyn åt höger */
+@media screen and (min-width: 701px) {
+  footer > .plattor > li > a { 
+  display: inline-block;
+  width: 49.5%;
+  margin-top: 8px;
+  margin-bottom: 10px; 
+  }
+}
+footer > .plattor > li > a:hover {
+  background: #000;
+}
+
+footer > ul {
+  padding: 0px;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+}
+
+footer > ul > li {
+  display: inline;
+}
+
+footer > .text_links > li > a {
+  margin-right: 20px; 
+}
+
+h1, h2, h3, h4 {
+  padding-left: 36px;
+  margin: 0px 0px -14px 0px;
+} 
+
+header {
+  background-image: linear-gradient(#eeeeee, grey);
+}
+
+header > ul {
+  list-style: none;
+  margin: -15px 0px 10px 20px; /* upp höger nere vänster (som klockan)*/
+  padding: 0px 0px 30px 16px;
+}
+/* Om fönstret är bredare än 1000 pixlar så flytta menyn åt höger */
+@media screen and (min-width: 701px) {
+  header > ul {
+    margin: -50px 0px 10px 300px;
+    padding: 0px 0px 30px 0px;
+  }
+}
+
+header > ul > li {
+  display: inline;
+  margin: 0px 20px 0px 0px; 
+}
+
+#logga {
+  display: inline-block;
+  padding: 10px 0px 20px 30px;  
+}
+
+footer > #logga {
+  padding-left: 0px;  
+}
+
+p {
+  padding: 0px 0px 0px 36px;
+} 
+
+/* float left ser till att element ska "flyta" till vänster om raden (vilket löser problemet med "hoppande" rutor) - testa med och utan - se https://www.w3schools.com/css/css_float.asp . I exemplet "Example - No float" (se länken) visas hur text lägger sig uppe till höger eller vänster om ett element istället för en bit upp nere till höger. Genom att kontrollera att kommande textrad ska ligga i linje med översta raden försvinner problemet med hoppande rutor */
+.produkt {
+  display: inline-block;
+  float: left;
+  background: #FAFAFA;
+  min-height: 200px;
+  padding-bottom: 20px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+/* Om fönstret är bredare än x pixlar så... */
+@media screen and (min-width: 604px) {
+  .produkt {
+  width: 48.6%;
+  }
+}
+/* Om fönstret är bredare än x pixlar så... */
+@media screen and (min-width: 905px) {
+  .produkt {
+  width: 32.4%;
+  }
+}
+
+/* används för att undvika att texten under produkterna hamnar till höger om produkter i vissa fall */
+.produkter {
+  display: inline-block;
+  padding: 2px;
+  border: 2px;
+  width: 100%;
+  min-height: 100px;
+  background-color: steelblue;
+}
+
+.produkt_lägg_varukorg {
+  background-color: #DDD;
+  border: none;
+  color: #000;
+  display: block;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-left: auto;
+  margin-right: auto;  
+  margin-top: 8px;
+  padding: 15px 32px;
+  text-align: center;
+}
+
+.produktbild {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.produktnamn {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0px 0px 7px 0px;  
+}
+
+.produktpris {
+  padding: 0px 0px 0px 36px;
+}
+
+.produkttext {
+  display: inline-block;
+  background-color: #FAFAFA;
+  padding: 1px 10px 1px 36px;  
+  min-height: 110px;
+}
+
+.produkttyp {
+  display: inline;
+}
+.produktbeskrivning {
+
+}
