@@ -53,6 +53,7 @@ footer > .plattor > li > a {
 }
 
 /* Om fönstret är bredare än 1000 pixlar så flytta menyn åt höger */
+/*
 @media screen and (min-width: 701px) {
     footer > .plattor > li > a {
         display: inline-block;
@@ -60,7 +61,7 @@ footer > .plattor > li > a {
         margin-top: 8px;
         margin-bottom: 10px;
     }
-}
+} */
 
 footer > .plattor > li > a:hover {
     background: #000;
@@ -92,18 +93,19 @@ header {
 
 header > ul {
     list-style: none;
-    margin: -15px 0px 10px 20px; /* upp höger nere vänster (som klockan)*/
+    margin: -15px 0px 0px 20px; /* upp höger nere vänster (som klockan)*/
     padding: 0px 0px 30px 16px;
 }
 
 /* Om fönstret är bredare än 1000 pixlar så flytta menyn åt höger */
+/*
 @media screen and (min-width: 701px) {
     header > ul {
         margin: -50px 0px 10px 300px;
         padding: 0px 0px 30px 0px;
     }
 }
-
+*/
 header > ul > li {
     display: inline;
     margin: 0px 20px 0px 0px;
@@ -134,19 +136,21 @@ p {
 }
 
 /* Om fönstret är bredare än x pixlar så... */
+/*
 @media screen and (min-width: 604px) {
     .produkt {
         width: 48.6%;
     }
 }
-
+*/
 /* Om fönstret är bredare än x pixlar så... */
+/*
 @media screen and (min-width: 905px) {
     .produkt {
         width: 32.4%;
     }
 }
-
+*/
 /* används för att undvika att texten under produkterna hamnar till höger om produkter i vissa fall */
 .produkter {
     display: inline-block;
@@ -203,4 +207,44 @@ p {
 
 .produktbeskrivning {
 
+}
+nav {
+    margin-top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+nav ul li {
+    border-right: 1px solid #bbb;
+    float: left;
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
 }
