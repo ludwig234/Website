@@ -1,16 +1,19 @@
 @charset "utf-8";
 /* CSS dokument */
+svg {
+    margin-left: auto;
+}
+header h1 {
+    margin: 1em;
 
+}
+,
 a {
     font-weight: bolder;
     text-decoration: none;
     font-family: "Segoe UI", Verdana;
     color: #222222;
 
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 body {
@@ -228,7 +231,12 @@ nav ul li {
     border-right: 1px solid #bbb;
     float: left;
 }
-
+@media screen and (max-width: 600px) {
+    nav ul li.right,
+    nav ul li {
+        float: none;
+    }
+}
 nav ul li:last-child {
     border-right: none;
 }
