@@ -3,11 +3,7 @@
 svg {
     margin-left: auto;
 }
-header h1 {
-    margin: 1em;
 
-}
-,
 a {
     font-weight: bolder;
     text-decoration: none;
@@ -30,9 +26,6 @@ footer {
     padding-top: 40px;
     padding-left: 38px;
     padding-right: 38px;
-    /*
-    background: linear-gradient(#555, #111);
-    */
 }
 
 footer > ul > li > a {
@@ -211,6 +204,7 @@ p {
 .produktbeskrivning {
 
 }
+
 nav {
     margin-top: 0;
     position: -webkit-sticky;
@@ -223,7 +217,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #444;
 
 }
 
@@ -231,12 +225,14 @@ nav ul li {
     border-right: 1px solid #bbb;
     float: left;
 }
+
 @media screen and (max-width: 600px) {
     nav ul li.right,
     nav ul li {
         float: none;
     }
 }
+
 nav ul li:last-child {
     border-right: none;
 }
@@ -250,9 +246,12 @@ nav ul li a {
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: #333;
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: #39b54a;
+}
+svg {
+    margin-left: 1em;
 }
