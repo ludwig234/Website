@@ -122,7 +122,6 @@ p {
 
 /* float left ser till att element ska "flyta" till vänster om raden (vilket löser problemet med "hoppande" rutor) - testa med och utan - se https://www.w3schools.com/css/css_float.asp . I exemplet "Example - No float" (se länken) visas hur text lägger sig uppe till höger eller vänster om ett element istället för en bit upp nere till höger. Genom att kontrollera att kommande textrad ska ligga i linje med översta raden försvinner problemet med hoppande rutor */
 .produkt {
-    display: inline-block;
     float: left;
     background: #FAFAFA;
     min-height: 200px;
@@ -132,24 +131,25 @@ p {
 }
 
 /* Om fönstret är bredare än x pixlar så... */
-/*
+
 @media screen and (min-width: 604px) {
     .produkt {
         width: 48.6%;
     }
 }
-*/
+
 /* Om fönstret är bredare än x pixlar så... */
 /*
-@media screen and (min-width: 905px) {
+@media screen and (max-width: 1000px) {
     .produkt {
-        width: 32.4%;
+        width: 40%;
     }
 }
 */
-/* används för att undvika att texten under produkterna hamnar till höger om produkter i vissa fall */
 .produkter {
-    display: inline-block;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
     padding: 2px;
     border: 2px;
     width: 100%;
@@ -226,15 +226,6 @@ nav ul li {
     float: left;
 }
 
-@media screen and (max-width: 800px) {
-    nav {
-        position: static;
-    }
-    nav ul li.right,
-    nav ul li {
-        float: none;
-    }
-}
 
 nav ul li:last-child {
     border-right: none;
@@ -257,4 +248,17 @@ li a:hover {
 }
 svg {
     margin-left: 1em;
+}
+@media screen and (max-width: 800px) {
+    nav {
+        position: static;
+    }
+    nav ul li.right,
+    nav ul li {
+        float: none;
+    }
+    .produkt {
+        flex-flow: column wrap;
+    }
+
 }
