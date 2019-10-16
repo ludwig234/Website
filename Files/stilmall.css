@@ -7,14 +7,16 @@ svg {
 a {
     font-weight: bolder;
     text-decoration: none;
-    font-family: "Segoe UI", Verdana, sans-serif;
+    font-family: "Open sans", Verdana, sans-serif;
     color: #222222;
+
 
 }
 
 body {
     background-image: linear-gradient(steelblue, grey);
-    font-family: Verdana, helvetica, sans-serif;
+    font-family: "Open sans", helvetica, sans-serif;
+    margin: auto;
 }
 
 footer {
@@ -127,7 +129,8 @@ p {
     min-height: 200px;
     padding-bottom: 20px;
     margin-bottom: 8px;
-    margin-right: 8px;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
 }
 
 /* Om fönstret är bredare än x pixlar så... */
@@ -246,17 +249,21 @@ li a:hover {
 .active {
     background-color: #39b54a;
 }
+
 svg {
     margin-left: 1em;
 }
+
 @media screen and (max-width: 800px) {
     nav {
         position: static;
     }
+
     nav ul li.right,
     nav ul li {
         float: none;
     }
+
     .produkt {
         flex-flow: column wrap;
     }
