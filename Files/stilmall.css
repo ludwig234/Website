@@ -41,25 +41,9 @@ footer > .plattor > li > a {
     background: steelblue;
     padding: 10px 0px 10px 0px;
     margin: 5px 0px 5px 0px;
-    /*
-    border-radius: 25px;
-    transition: all .2s ease-in;
-    -moz-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    -webkit-transition: all .2s ease-in;
-    */
 }
 
-/* Om fönstret är bredare än 1000 pixlar så flytta menyn åt höger */
-/*
-@media screen and (min-width: 701px) {
-    footer > .plattor > li > a {
-        display: inline-block;
-        width: 49.5%;
-        margin-top: 8px;
-        margin-bottom: 10px;
-    }
-} */
+
 
 footer > .plattor > li > a:hover {
     background: #000;
@@ -95,28 +79,11 @@ header > ul {
     padding: 0px 0px 30px 16px;
 }
 
-/* Om fönstret är bredare än 1000 pixlar så flytta menyn åt höger */
-/*
-@media screen and (min-width: 701px) {
-    header > ul {
-        margin: -50px 0px 10px 300px;
-        padding: 0px 0px 30px 0px;
-    }
-}
-*/
 header > ul > li {
     display: inline;
     margin: 0px 20px 0px 0px;
 }
 
-#logga {
-    display: inline-block;
-    padding: 10px 0px 20px 30px;
-}
-
-footer > #logga {
-    padding-left: 0px;
-}
 
 p {
     padding: 0px 0px 0px 36px;
@@ -131,27 +98,22 @@ p {
     margin-bottom: 8px;
     margin-right: 0.5%;
     margin-left: 0.5%;
-}
-
-/* Om fönstret är bredare än x pixlar så... */
-
-@media screen and (min-width: 604px) {
-    .produkt {
-        width: 48.6%;
-    }
+    width: 48.6%;
 }
 
 /* Om fönstret är bredare än x pixlar så... */
 /*
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 604px) {
     .produkt {
-        width: 40%;
+        width: auto;
     }
 }
-*/
+
+ */
+
 .produkter {
     display: flex;
-    flex-flow: row wrap;
+   flex-flow: row wrap;
     align-items: baseline;
     padding: 2px;
     border: 2px;
@@ -211,7 +173,7 @@ p {
 nav {
     margin-top: 0;
     position: -webkit-sticky;
-    position: sticky;
+    position: static;
     top: 0;
 }
 
@@ -226,7 +188,7 @@ nav ul {
 
 nav ul li {
     border-right: 1px solid #bbb;
-    float: left;
+    float: none;
 }
 
 
@@ -254,18 +216,17 @@ svg {
     margin-left: 1em;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
     nav {
-        position: static;
+        position: sticky;
     }
 
     nav ul li.right,
     nav ul li {
-        float: none;
+        float: left;
     }
 
-    .produkt {
+    .produkter {
         flex-flow: column wrap;
     }
-
 }
