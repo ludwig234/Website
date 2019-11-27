@@ -243,6 +243,9 @@ svg {
 .flex_list_item {
     padding-top: 1%;
 }
+.flex_list_item_title {
+    font-weight: bold;
+}
 
 /* .ascii_art {
     white-space: pre-line;
