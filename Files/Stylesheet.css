@@ -2,12 +2,12 @@
 /* CSS doc */
 .svg_logo {
     margin-left: auto;
-
 }
-
-a {
-
+header {
+    background-image: linear-gradient(#eeeeee, grey);
 }
+/*todo: remove gradient and replace with a solid colour*/
+
 
 body {
     background-image: linear-gradient(steelblue, grey);
@@ -30,15 +30,11 @@ h1, h2, h3, h4 {
     margin: 0 0 -14px 0;
 }
 
-header {
-    background-image: linear-gradient(#eeeeee, grey);
-}
 
 p {
     padding: 0 0 0 36px;
 }
 
-/* float left ser till att element ska "flyta" till vänster om raden (vilket löser problemet med "hoppande" rutor) - testa med och utan - se https://www.w3schools.com/css/css_float.asp . I exemplet "Example - No float" (se länken) visas hur text lägger sig uppe till höger eller vänster om ett element istället för en bit upp nere till höger. Genom att kontrollera att kommande textrad ska ligga i linje med översta raden försvinner problemet med hoppande rutor */
 .product {
     float: left;
     background: #FAFAFA;
@@ -182,11 +178,6 @@ svg {
     flex-flow: row wrap;
     transition: all 2s linear;
 }
-
-/* .flex_list_item {
-	list-style-type:none;
-}
-*/
 .flex_list {
     list-style-type: none;
 }
@@ -224,5 +215,4 @@ svg {
 /* .ascii_art {
 	white-space: pre-line;
 }
-
- */
+*/
