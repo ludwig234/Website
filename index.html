@@ -1,31 +1,18 @@
 <!DOCTYPE html>
-<html lang="sv">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>DOOM Slayer</title>
     <link rel="stylesheet" type="text/css" href="./Files/stilmall.css">
-    <audio id="resist" src="Files/Music/resist.mp3">
-        <p>If you are reading this, it is because your browser does not support the audio element. </p>
-    </audio>
-    <audio id="ACVC" src="Files/Music/03 - ACVC.mp3">
-        <p>If you are reading this, it is because your browser does not support the audio element. </p>
-    </audio>
-    <audio id="still_alive" src="Files/Music/Portal - 'Still Alive'.mp3">
-        <p>If you are reading this, it is because your browser does not support the audio element. </p>
-    </audio>
-    <audio id="TSFH" src="Files/Music/Heart of Courage.mp3">
-        <p>If you are reading this, it is because your browser does not support the audio element. </p>
-    </audio>
+    <audio id="resist" src="Files/Music/resist.mp3"></audio>
+    <audio id="ACVC" src="Files/Music/03 - ACVC.mp3"></audio>
+    <audio id="still_alive" src="Files/Music/Portal - 'Still Alive'.mp3"></audio>
+    <audio id="TSFH" src="Files/Music/Heart of Courage.mp3"></audio>
 </head>
-
-<body>
+<html>
 
 <header>
-    <svg width="200" height="200"
-         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <image xlink:href="Files/Pictures/IORS IT.svg" height="200" width="200" alt="logo">
-    </svg>
+    <img class="svg_logo" src="Files/Pictures/IORS IT.svg" height="200" width="200" alt="logo">
 </header>
 <nav class="nav_bar">
     <ul class="nav_buttons">
@@ -33,92 +20,93 @@
         <li class="nav_buttons_items"><a href="#Erbjudanden" onclick="resist.play()">Erbjudanden</a></li>
         <li class="nav_buttons_items"><a href="#kontakta" onclick="TSFH.play()">Kontakta oss</a></li>
         <li class="nav_buttons_items"><a href="#Produkter" onclick="ACVC.play()">Produkter/Service</a></li>
-        <li class="nav_buttons_items"><a href="#andrasidor">andra sidor</a></li>
+        <li class="nav_buttons_items"><a href="#andrasidor">Andra sidor</a></li>
     </ul>
 </nav>
 <section>
-    <div class="produkter">
+    <div class="products">
 
-        <div class="produkt">
-            <img class="produktbild" src="./Files/388661071.jpg" width="125" height="160"
+        <div class="product">
+            <img class="product_image" src="./Files/388661071.jpg" width="125" height="160"
                  alt="bild produkt/service">
-            <div class="produkttext">
-                <span class="produktnamn">Produktnamn A</span>
-                <span class="produkttyp">Typ</span>
-                <span class="produktpris">1&nbsp;995&nbsp;kr/styck</span><br>
-                <span class="produktbeskrivning">Beskrivning: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span><br>
+            <div class="product_text">
+                <span class="product_name">Produktnamn A</span>
+                <span class="product_type">Typ</span>
+                <span class="product_price">1&nbsp;995&nbsp;kr/styck</span><br>
+                <span class="product_description">Beskrivning: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span><br>
             </div>
-            <button class="produkt_lägg_varukorg" type="button" onclick="alert(&#39;Hello world!&#39;)">Lägg i
+            <button class="product_add_to_cart" type="button" onclick='alert("Hello world")'>Lägg i
                 varukorg
             </button>
         </div>
 
-        <div class="produkt">
-            <img class="produktbild" src="./Files/388661071.jpg" width="125" height="160"
+        <div class="product">
+            <img class="product_image" src="./Files/388661071.jpg" width="125" height="160"
                  alt="bild produkt/service">
-            <div class="produkttext">
-                <span class="produktnamn">Produktnamn B</span>
-                <span class="produkttyp">Typ</span>
-                <span class="produktpris">10&nbsp;995&nbsp;kr/styck</span><br>
-                <span class="produktbeskrivning">Beskrivning: Quisque sit amet sapien sed ante sagittis viverra. </span><br>
+            <div class="product_text">
+                <span class="product_name">Produktnamn B</span>
+                <span class="product_type">Typ</span>
+                <span class="product_price">10&nbsp;995&nbsp;kr/styck</span><br>
+                <span class="product_description">Beskrivning: Quisque sit amet sapien sed ante sagittis viverra. </span><br>
             </div>
-            <button class="produkt_lägg_varukorg" type="button" onclick="alert(&#39;Hello world!&#39;)">Lägg i
+            <button class="product_add_to_cart" type="button" onclick='alert("Hello world")'>Lägg i
                 varukorg
             </button>
         </div>
 
-        <div class="produkt">
-            <img class="produktbild" src="./Vårt varumärke_files/388661071.jpg" width="125" height="160"
+        <div class="product">
+            <img class="product_image" src="./Vårt varumärke_files/388661071.jpg" width="125" height="160"
                  alt="bild produkt/service">
-            <div class="produkttext">
-                <span class="produktnamn">Produktnamn A</span>
-                <span class="produkttyp">Typ</span>
-                <span class="produktpris">1&nbsp;995&nbsp;kr/styck</span><br>
-                <span class="produktbeskrivning">Beskrivning: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span><br>
+            <div class="product_text">
+                <span class="product_name">Produktnamn A</span>
+                <span class="product_type">Typ</span>
+                <span class="product_price">1&nbsp;995&nbsp;kr/styck</span><br>
+                <span class="product_description">Beskrivning: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span><br>
             </div>
-            <button class="produkt_lägg_varukorg" type="button" onclick="alert(&#39;Hello world!&#39;)">Lägg i
+            <button class="product_add_to_cart" type="button" onclick='alert("Hello world")'>Lägg i
                 varukorg
             </button>
         </div>
 
-        <div class="produkt">
-            <img class="produktbild" src="./Vårt varumärke_files/27364540.jpg" width="125" height="160"
+        <div class="product">
+            <img class="product_image" src="./Vårt varumärke_files/27364540.jpg" width="125" height="160"
                  alt="bild produkt/service">
-            <div class="produkttext">
-                <span class="produktnamn">Produktnamn B</span>
-                <span class="produkttyp">Typ</span>
-                <span class="produktpris">10&nbsp;995&nbsp;kr/styck</span><br>
-                <span class="produktbeskrivning">Beskrivning: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span><br>
+            <div class="product_text">
+                <span class="product_name">Produktnamn B</span>
+                <span class="product_type">Typ</span>
+                <span class="product_price">10&nbsp;995&nbsp;kr/styck</span><br>
+                <span class="product_description">Beskrivning: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span><br>
             </div>
-            <button class="produkt_lägg_varukorg" type="button" onclick="alert(&#39;Hello world!&#39;)">Lägg i
+            <button class="product_add_to_cart" type="button" onclick='alert("Hello world")'>Lägg i
                 varukorg
             </button>
         </div>
 
-        <div class="produkt">
-            <img class="produktbild" src="./Vårt varumärke_files/388661071.jpg" width="125" height="160"
+        <div class="product">
+            <img class="product_image" src="./Vårt varumärke_files/388661071.jpg" width="125" height="160"
                  alt="bild produkt/service">
-            <div class="produkttext">
-                <span class="produktnamn">Produktnamn A</span>
-                <span class="produkttyp">Typ</span>
-                <span class="produktpris">1&nbsp;995&nbsp;kr/styck</span><br>
-                <span class="produktbeskrivning">Beskrivning: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span><br>
+            <div class="product_text">
+                <span class="product_name">Produktnamn A</span>
+                <span class="product_type">Typ</span>
+                <span class="product_price">1&nbsp;995&nbsp;kr/styck</span><br>
+                <span class="product_description">Beskrivning: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span><br>
             </div>
-            <button class="produkt_lägg_varukorg" type="button" onclick="alert(&#39;Hello world!&#39;)">Lägg i
+            <button class="product_add_to_cart" type="button" onclick='alert("Hello world")'>Lägg i
                 varukorg
             </button>
         </div>
 
-        <div class="produkt">
-            <img class="produktbild" src="./Vårt varumärke_files/27364540.jpg" width="125" height="160"
+        <div class="product">
+            <img class="product_image" src="./Vårt varumärke_files/27364540.jpg" width="125" height="160"
                  alt="bild produkt/service">
-            <div class="produkttext">
-                <span class="produktnamn">Produktnamn B</span>
-                <span class="produkttyp">Typ</span>
-                <span class="produktpris">10&nbsp;995&nbsp;kr/styck</span><br>
-                <span class="produktbeskrivning">Beskrivning: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span><br>
+            <div class="product_text">
+                <span class="product_name">Produktnamn B</span>
+                <span class="product_type">Typ</span>
+                <span class="product_price">10&nbsp;995&nbsp;kr/styck</span><br>
+                <span class="product_description">Beskrivning: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span><br>
             </div>
-            <button class="produkt_lägg_varukorg" type="button" onclick="alert(&#39;Hello world!&#39;)">Lägg i
+            <button class="product_add_to_cart" type="button" onclick='alert("Hello world")'>Lägg i
+                varukorg
             </button>
         </div>
 
@@ -127,117 +115,95 @@
 </section>
 
 <footer>
-    <!-- <ul class="plattor">
-        <li><a href="https://youtu.be/Sh5S3OxiE-s">Till toppen</a></li>
-        <li><a onclick="never.play()">Hitta oss</a></li>
-        <li><a href="#">Back To Top</a></li>
-    </ul>
-    <ul class="text_links">
-        <li><a href="http://sawe.asuscomm.com/gymnasiet/Webbutveckling_1/2_projekt_f%c3%b6rberedelser/mall_1/#">Erbjudanden</a>
-        </li>
-        <li><a href="http://sawe.asuscomm.com/gymnasiet/Webbutveckling_1/2_projekt_f%c3%b6rberedelser/mall_1/#">produkter/service</a>
-        </li>
-        <li><a href="http://sawe.asuscomm.com/gymnasiet/Webbutveckling_1/2_projekt_f%c3%b6rberedelser/mall_1/#">Kontakta
-            oss</a></li>
-    </ul>
-    -->
-    <div class="flex_container">
-        <div class="flex_column">
-            <ul class="flex_list">
-                <li class="flex_list_item_title">
-                    <a>column 1/a>
-                </li>
-                <li class="flex_list_item">
-                    <a>┳━┳ ノ( ゜-゜ノ)</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>┬─┬﻿ ︵ /(.□. \）</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>3</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>4</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>¯\_(ツ)_/¯</a>
-                </li>
-            </ul>
-        </div>
-        <div class="flex_column">
-            <ul class="flex_list">
-                <li class="flex_list_item_title">
-                    <a>column 2</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>2</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>2</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>2</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>3</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>4</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>5</a>
-                </li>
-            </ul>
-        </div>
-        <div class="flex_column">
-            <ul class="flex_list">
-                <li class="flex_list_item_title">
-                    <a>column 3</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>howdy partner</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>so anyway I started blasting</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>( •_•)>⌐■-■</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>(⌐■_■)</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>(☞ﾟヮﾟ)☞ ☜(ﾟヮﾟ☜)</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>5</a>
-                </li>
-            </ul>
-        </div>
-        <div class="flex_column">
-            <ul class="flex_list">
-                <li class="flex_list_item_title">
-                    <a>column 4</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>2</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>2</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>2</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>3</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>4</a>
-                </li>
-                <li class="flex_list_item">
-                    <a>5</a>
-                </li>
-            </ul>
+    <div class="tab">
+        <a class="button" href="#expand">Expand</a>
+        <div id="expand" class="flex_container">
+            <div>
+                <a id="button2" class="button" href="">Expand</a>
+            </div>
+            <div class="flex_column">
+                <ul class="flex_list">
+                    <li class="flex_list_item">
+                        column 1
+                    </li>
+                    <li class="flex_list_item">
+                        ┳━┳ ノ( ゜-゜ノ)
+                    </li>
+                    <li class="flex_list_item">
+                        ┬─┬﻿ ︵ /(.□. \）
+                    </li>
+                    <li class="flex_list_item">
+                        3
+                    </li>
+                    <li class="flex_list_item">
+                        4
+                    </li>
+                    <li class="flex_list_item">
+                        ¯\_(ツ)_/¯
+                    </li>
+                </ul>
+            </div>
+            <div class="flex_column">
+                <ul class="flex_list">
+                    <li class="flex_list_item">column 2</li>
+                    <li class="flex_list_item">2</li>
+                    <li class="flex_list_item">2</li>
+                    <li class="flex_list_item">2</li>
+                    <li class="flex_list_item">3</li>
+                    <li class="flex_list_item">4</li>
+                    <li class="flex_list_item">5</li>
+                </ul>
+            </div>
+            <div class="flex_column">
+                <ul class="flex_list">
+                    <li class="flex_list_item">
+                        column 3
+                    </li>
+                    <li class="flex_list_item">
+                        howdy partner
+                    </li>
+                    <li class="flex_list_item">
+                        so anyway I started blasting
+                    </li>
+                    <li class="flex_list_item">
+                        ( •_•)>⌐■-■
+                    </li>
+                    <li class="flex_list_item">
+                        (⌐■_■)
+                    </li>
+                    <li class="flex_list_item">
+                        (☞ﾟヮﾟ)☞ ☜(ﾟヮﾟ☜)
+                    </li>
+                    <li class="flex_list_item">
+                        5
+                    </li>
+                </ul>
+            </div>
+            <div class="flex_column">
+                <ul class="flex_list">
+                    <li class="flex_list_item">
+                        column 4
+                    </li>
+                    <li class="flex_list_item">
+                        2
+                    </li>
+                    <li class="flex_list_item">
+                        2
+                    </li>
+                    <li class="flex_list_item">
+                        2
+                    </li>
+                    <li class="flex_list_item">
+                        3
+                    </li>
+                    <li class="flex_list_item">
+                        4
+                    </li>
+                    <li class="flex_list_item">
+                        5
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 
