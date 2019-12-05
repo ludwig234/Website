@@ -4,7 +4,7 @@
     margin-left: auto;
 }
 header {
-    background-image: linear-gradient(#eeeeee, grey);
+    background-color: #457291;
 }
 /*todo: remove gradient and replace with a solid colour*/
 
@@ -22,7 +22,6 @@ footer {
     background: lightsteelblue;
     margin-top: 1em;
     padding: 1% 1% 0 1%;
-    transition: bottom 10s linear;
 }
 
 h1, h2, h3, h4 {
@@ -168,17 +167,18 @@ svg {
 }
 
 .flex_column {
-    width: auto;
-    max-width: 10rem;
+    width: 25%;
+    max-width: 25%;
     min-width: 5rem;
 }
 
 .flex_container {
     display: flex;
     flex-flow: row wrap;
-    transition: all 2s linear;
+    margin-bottom: 2%;
 }
 .flex_list {
+    padding-left: 0;
     list-style-type: none;
 }
 
@@ -188,31 +188,7 @@ svg {
 
 .flex_list > li:nth-child(1) {
     font-weight: bolder;
+    padding-bottom: 3%;
 }
 
-.tab > div {
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-}
-
-.tab > div:target {
-
-    opacity: 1;
-    height: auto;
-}
-
-.button {
-    display: block;
-    font: bold 11px Arial;
-    text-decoration: none;
-    background-color: #EEEEEE;
-    color: #333333;
-    padding: 1em 1em;
-    text-align: center;
-}
-
-/* .ascii_art {
-	white-space: pre-line;
-}
-*/
+/* .ascii_art { white-space: pre-line; } */
