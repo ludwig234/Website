@@ -44,8 +44,8 @@
      id="namedview29"
      showgrid="false"
      inkscape:zoom="1.4142136"
-     inkscape:cx="48.306593"
-     inkscape:cy="104.40289"
+     inkscape:cx="227.2046"
+     inkscape:cy="126.33382"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -67,37 +67,38 @@
   </defs>
   <title
      id="title6">IORS IT</title>
-  <circle
+  <ellipse
      class="cls-1"
-     cx="128"
-     cy="128"
+     cx="126.65615"
+     cy="124.79001"
      id="ellipse8"
-     style="fill:#39b54a;stroke-width:0.80866832"
-     r="128" />
+     style="fill:#39b54a;stroke-width:0.38086328"
+     rx="61.066887"
+     ry="59.512947" />
   <ellipse
      class="cls-2"
-     cx="128"
-     cy="128"
+     cx="126.65615"
+     cy="124.79001"
      id="ellipse10"
-     ry="106.0879"
-     rx="106.72052"
-     style="fill:#006837;stroke-width:0.80866832" />
+     ry="49.325027"
+     rx="50.914764"
+     style="fill:#006837;stroke-width:0.38086328" />
   <polygon
      class="cls-3"
-     points="384.54,406.47 227.77,148.18 71,406.47 227.77,406.47 "
+     points="227.77,406.47 384.54,406.47 227.77,148.18 71,406.47 "
      id="polygon16"
-     transform="matrix(0.85569934,0,0,0.85797532,-66.491903,-73.439784)"
+     transform="matrix(0.40824137,0,0,0.39891124,33.866969,31.131606)"
      style="fill:#444444" />
   <polygon
      class="cls-4"
-     points="198.29,257.47 170.29,277.47 227.29,175.47 296.29,304.47 253.29,255.47 247.29,289.47 227.29,260.47 203.29,274.47 "
+     points="296.29,304.47 253.29,255.47 247.29,289.47 227.29,260.47 203.29,274.47 198.29,257.47 170.29,277.47 227.29,175.47 "
      id="polygon18"
-     transform="matrix(0.85569934,0,0,0.85797532,-66.491903,-73.439784)"
+     transform="matrix(0.40824137,0,0,0.39891124,33.866969,31.131606)"
      style="fill:#ffffff" />
   <path
      class="cls-4"
-     d="M 132.28781,0"
+     d="M 128.7018,65.277056"
      id="path20"
      inkscape:connector-curvature="0"
-     style="fill:#ffffff;stroke-width:0.52713448" />
+     style="fill:#ffffff;stroke-width:0.24826762" />
 </svg>
