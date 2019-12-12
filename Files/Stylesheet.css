@@ -23,12 +23,18 @@ footer {
     margin-top: 1em;
     padding: 1% 1% 0 1%;
 }
-
+footer a{
+    display: inline-block;
+    padding: 4% 0 4% 0%;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.25em;
+    width: 100%;
+}
 h1, h2, h3, h4 {
     padding-left: 36px;
     margin: 0 0 -14px 0;
 }
-
 
 p {
     padding: 0 0 0 36px;
@@ -167,7 +173,7 @@ svg {
 }
 
 .flex_column {
-    width: 25%;
+    width: 50%;
     max-width: 25%;
     min-width: 5rem;
 }
@@ -182,13 +188,10 @@ svg {
     list-style-type: none;
 }
 
-.flex_list_item {
-    padding-top: 1%;
-}
 
 .flex_list > li:nth-child(1) {
     font-weight: bolder;
     padding-bottom: 3%;
 }
 
-/* .ascii_art { white-space: pre-line; } */
+.ascii_art { white-space: pre-line; }
