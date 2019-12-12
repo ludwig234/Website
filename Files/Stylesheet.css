@@ -3,11 +3,10 @@
 .svg_logo {
     margin-left: auto;
 }
+
 header {
     background-color: #457291;
 }
-/*todo: remove gradient and replace with a solid colour*/
-
 
 body {
     background-image: linear-gradient(steelblue, grey);
@@ -15,22 +14,6 @@ body {
     margin: auto;
 }
 
-footer {
-    display: block;
-    width: auto;
-    min-height: 4em;
-    background: lightsteelblue;
-    margin-top: 1em;
-    padding: 1% 1% 0 1%;
-}
-footer a{
-    display: inline-block;
-    padding: 4% 0 4% 0%;
-    text-decoration: none;
-    color: #000;
-    font-size: 1.25em;
-    width: 100%;
-}
 h1, h2, h3, h4 {
     padding-left: 36px;
     margin: 0 0 -14px 0;
@@ -172,26 +155,92 @@ svg {
     }
 }
 
+footer {
+    display: block;
+    width: auto;
+    min-height: 4em;
+    background: lightsteelblue;
+    margin-top: 1em;
+    padding: 1% 1% 0 1%;
+}
+
+footer a {
+    display: inline-block;
+    padding: 4% 0;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background-color: #39b54a;
+    font-size: 1.25em;
+    width: 100%;
+}
+
 .flex_column {
-    width: 50%;
-    max-width: 25%;
+    width: 100%;
+    max-width: 100%;
     min-width: 5rem;
 }
 
 .flex_container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     margin-bottom: 2%;
 }
+
 .flex_list {
     padding-left: 0;
     list-style-type: none;
 }
 
 
-.flex_list > li:nth-child(1) {
+.flex_list > li:nth-child(1) a {
     font-weight: bolder;
-    padding-bottom: 3%;
+    padding: 7% 0;
 }
 
-.ascii_art { white-space: pre-line; }
+@media screen and (min-width: 700px) {
+    footer {
+        display: block;
+        width: auto;
+        min-height: 4em;
+        background: lightsteelblue;
+        margin-top: 1em;
+        padding: 1% 1% 0 1%;
+    }
+
+    footer a {
+        display: inline-block;
+        padding: 2% 0 2% 0%;
+        text-decoration: none;
+        color: #000;
+        font-size: 1em;
+        width: 100%;
+        background:none;
+        text-align: left;
+    }
+
+    .flex_column {
+        width: 50%;
+        max-width: 50%;
+        min-width: 5rem;
+    }
+
+    .flex_container {
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 2%;
+    }
+
+    .flex_list {
+        padding-left: 0;
+        list-style-type: none;
+    }
+    .flex_list > li:nth-child(1) a {
+        font-weight: bolder;
+        padding: 5% 0;
+    }
+}
+
+.ascii_art {
+    white-space: pre-line;
+}
