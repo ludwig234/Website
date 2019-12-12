@@ -199,28 +199,19 @@ footer a {
 }
 
 @media screen and (min-width: 700px) {
-    footer {
-        display: block;
-        width: auto;
-        min-height: 4em;
-        background: lightsteelblue;
-        margin-top: 1em;
-        padding: 1% 1% 0 1%;
-    }
-
     footer a {
         display: inline-block;
         padding: 2% 0 2% 0%;
         text-decoration: none;
         color: #000;
         font-size: 1em;
-        width: 100%;
+        width: 50%;
         background:none;
         text-align: left;
     }
 
     .flex_column {
-        width: 50%;
+        width: 25%;
         max-width: 50%;
         min-width: 5rem;
     }
