@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -7,13 +7,21 @@
 	<link href="files/stylesheet.css" rel="stylesheet" type="text/css">
 	<link href="files/pictures/iors-it-icon.png" rel="shortcut icon" sizes="16x16 32x32 64x64 128x128"
 		  type="image/png"/>
+	<script
+			crossorigin="anonymous"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			src="files/scripts/jquery-3.4.1.min.js">
+	</script>
+	<script>
+		$(function () {
+			$("#header").load("files/pages/header.html");
+			$("#footer").load("files/pages/footer.html");
+		});
+	</script>
 </head>
 <body>
-<header>
-	<a href="home.html">
-		<img class="svg_logo" alt="logo" height="200" src="files/pictures/iors-it.svg" width="200">
-	</a>
-</header>
+<div id="skip"><a href="#content">Skip to Main Content</a></div>
+<header id="header"></header>
 <nav class="nav_bar">
 	<ul class="nav_buttons">
 		<li class="nav_buttons_items"><a href="home.html">Home</a></li>
@@ -23,7 +31,7 @@
 		<li class="nav_buttons_items"><a href="site-map.html">Site map</a></li>
 	</ul>
 </nav>
-<section>
+<section id="content">
 	<div class="products">
 
 		<div class="product">

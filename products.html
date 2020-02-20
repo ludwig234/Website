@@ -7,12 +7,21 @@
 	<link href="files/stylesheet.css" rel="stylesheet" type="text/css">
 	<link href="files/pictures/iors-it-icon.png" rel="shortcut icon" sizes="16x16 32x32 64x64 128x128"
 		  type="image/png"/>
+	<script
+			crossorigin="anonymous"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			src="files/scripts/jquery-3.4.1.min.js">
+	</script>
+	<script>
+		$(function () {
+			$("#header").load("files/pages/header.html");
+			$("#footer").load("files/pages/footer.html");
+		});
+	</script>
 </head>
 <body>
-<header>
-	<a href="home.html">
-		<img alt="logo" class="svg_logo" height="200" src="files/pictures/iors-it.svg" width="200">
-	</a></header>
+<div id="skip"><a href="#content">Skip to Main Content</a></div>
+<header id="header"></header>
 <nav class="nav_bar">
 	<ul class="nav_buttons">
 		<li class="nav_buttons_items"><a href="home.html">Home</a></li>
@@ -22,12 +31,14 @@
 		<li class="nav_buttons_items"><a href="site-map.html">Site map</a></li>
 	</ul>
 </nav>
-<section>
+<section id="content">
 	<div class="products">
 
 		<div class="product">
-			<img alt="bild produkt/service" class="product_image_container" height="160" src="files/pictures/product-pictures/nvidia-quadro.jpg"
-				 width="160">
+			<p class="product_image_container">
+				<img class="product_image" alt="Nvidia quadro"
+					 src="files/pictures/product-pictures/nvidia-quadro.jpg">
+			</p>
 
 			<div class="product_text">
 				<span class="product_name">Produktnamn A</span>
@@ -39,10 +50,11 @@
 				varukorg
 			</button>
 		</div>
-
 		<div class="product">
-			<img alt="bild produkt/service" class="product_image_container" height="160" src="files/pictures/product-pictures/msi-gpu-1.jpg"
-				 width="160">
+			<p class="product_image_container">
+				<img class="product_image" alt="Msi graphics card"
+					 src="files/pictures/product-pictures/msi-gpu-1.jpg">
+			</p>
 
 			<div class="product_text">
 				<span class="product_name">Produktnamn B</span>
@@ -56,8 +68,10 @@
 		</div>
 
 		<div class="product">
-			<img alt="bild produkt/service" class="product_image_container" height="160" src="files/pictures/product-pictures/nvidia-quadro.jpg"
-				 width="160">
+			<p class="product_image_container">
+				<img class="product_image" alt="Nvidia quadro"
+					 src="files/pictures/product-pictures/nvidia-quadro.jpg">
+			</p>
 
 			<div class="product_text">
 				<span class="product_name">Produktnamn A</span>
@@ -71,8 +85,10 @@
 		</div>
 
 		<div class="product">
-			<img alt="bild produkt/service" class="product_image_container" height="160" src="files/pictures/product-pictures/msi-gpu-1.jpg"
-				 width="160">
+			<p class="product_image_container">
+				<img class="product_image" alt="Msi graphics card"
+					 src="files/pictures/product-pictures/msi-gpu-1.jpg">
+			</p>
 
 			<div class="product_text">
 				<span class="product_name">Produktnamn B</span>
@@ -86,8 +102,10 @@
 		</div>
 
 		<div class="product">
-			<img alt="bild produkt/service" class="product_image_container" height="160" src="files/pictures/product-pictures/nvidia-quadro.jpg"
-				 width="160">
+			<p class="product_image_container">
+				<img class="product_image" alt="Nvidia quadro"
+					 src="files/pictures/product-pictures/nvidia-quadro.jpg">
+			</p>
 			<div class="product_text">
 				<span class="product_name">Produktnamn A</span>
 				<span class="product_type">Typ</span>
@@ -98,8 +116,10 @@
 		</div>
 
 		<div class="product">
-			<img alt="bild produkt/service" class="product_image_container" height="160" src="files/pictures/product-pictures/msi-gpu-1.jpg"
-				 width="160">
+			<p class="product_image_container">
+				<img class="product_image" alt="Msi graphics card"
+					 src="files/pictures/product-pictures/msi-gpu-1.jpg">
+			</p>
 			<div class="product_text">
 				<span class="product_name">Produktnamn B</span>
 				<span class="product_type">Typ</span>
@@ -114,7 +134,6 @@
 		</div>
 
 	</div>
-
 </section>
 
 <footer>
