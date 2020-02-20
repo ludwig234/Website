@@ -45,7 +45,7 @@ p {
 }
 
 .product {
-	background: #FAFAFA;
+	background: #fff;
 	float: left;
 	margin: 0.5em 0.5em;
 	min-height: 200px;
@@ -101,7 +101,7 @@ p {
 }
 
 .product_text {
-	background-color: #FAFAFA;
+	background-color: #fff;
 	display: inline-block;
 	min-height: 110px;
 	padding: 0.5em 0.5em 0.5em 0.5em;
