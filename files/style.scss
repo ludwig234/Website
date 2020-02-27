@@ -1,5 +1,9 @@
 @charset "utf-8";
-/* CSS doc */
+/* SCSS doc */
+
+$breakpoint-desktop: 800px;
+$breakpoint-footer: 800px;
+
 .svg_logo {
   margin-left: auto;
 }
