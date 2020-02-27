@@ -4,7 +4,7 @@
 	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 	<title>DOOM Slayer</title>
-	<link href="files/stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="files/style.css" rel="stylesheet" type="text/css">
 	<link href="files/pictures/iors-it-icon.png" rel="shortcut icon" sizes="16x16 32x32 64x64 128x128"
 		  type="image/png"/>
 </head>
@@ -12,27 +12,28 @@
 <div id="skip"><a href="#content">Skip to Main Content</a></div>
 <header id="header">
 	<!--#include virtual="files/pages/header.html" -->
+	<a href="../../home.html">
+		<img class="svg_logo" alt="logo" height="200" src="files/pictures/iors-it.svg" width="200">
+	</a>
+	<nav class="header_nav">
+		<ul class="header_nav_container">
+			<li class="header_nav_items"><a class="active" href="home.html">Home</a></li>
+			<li class="header_nav_items"><a href="offers.html">Offers</a></li>
+			<li class="header_nav_items"><a href="about.html">About us</a></li>
+			<li class="header_nav_items"><a href="products.html">Products/Service</a></li>
+			<li class="header_nav_items"><a href="site-map.html">Site map</a></li>
+		</ul>
+	</nav>
 </header>
-<nav class="nav_bar">
-	<ul class="nav_buttons">
-		<li class="nav_buttons_items"><a class="active" href="home.html">Home</a></li>
-		<li class="nav_buttons_items"><a href="offers.html">Offers</a></li>
-		<li class="nav_buttons_items"><a href="about.html">About us</a></li>
-		<li class="nav_buttons_items"><a href="products.html">Products/Service</a></li>
-		<li class="nav_buttons_items"><a href="site-map.html">Site map</a></li>
-	</ul>
-</nav>
 <section id="content">
 	<div class="products">
-
 		<div class="product">
 			<p class="product_image_container">
 				<img class="product_image" alt="Nvidia quadro"
 					 src="files/pictures/product-pictures/nvidia-quadro.jpg">
 			</p>
-
 			<div class="product_text">
-				<h3 class="product_name">Produktnamn A</h3>
+				<p class="product_name">Produktnamn A</p>
 				<span class="product_type">Typ</span>
 				<span class="product_price">1&nbsp;995&nbsp;kr/styck</span><br>
 				<span class="product_description">Beskrivning: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span><br>
@@ -48,7 +49,7 @@
 			</p>
 
 			<div class="product_text">
-				<h3 class="product_name">Produktnamn B</h3>
+				<p class="product_name">Produktnamn B</p>
 				<span class="product_type">Typ</span>
 				<span class="product_price">10&nbsp;995&nbsp;kr/styck</span><br>
 				<span class="product_description">Beskrivning: Quisque sit amet sapien sed ante sagittis viverra. </span><br>
