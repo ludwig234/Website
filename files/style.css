@@ -1,8 +1,4 @@
 /* SCSS doc */
-.svg_logo {
-  margin-left: auto;
-}
-
 html, body {
   height: 100%;
 }
@@ -40,21 +36,59 @@ p {
   height: auto;
 }
 
-.header_nav ul {
-  background-color: #444;
-  list-style-type: none;
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #212121;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  display: -ms-flexbox;
+  display: flex;
+  height: 112px;
+  justify-content: space-between;
+}
+.header_name {
+  align-items: center;
+  display: flex;
+  height: 72px;
+  margin-right: auto;
+  padding-left: 24px;
+}
+.svg_logo {
+  display: block;
+  height: 32px;
+  margin-right: 16px;
+  width: 32px;
+}
+
+.header_Title {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline;
+}
+.header_nav {
+  margin-left: auto;
+  display: block;
+}
+.header_nav_container {
+  list-style: none;
   margin: 0;
-  overflow: hidden;
   padding: 0;
 }
-.header_nav ul li {
-  border-right: 1px solid #333;
-  width: 25%;
+.header_nav_container li {
+  font-size: 16px;
+  color: #9e9e9e;
+  display: inline-block;
+  line-height: 48px;
+  position: relative;
+  line-height: 72px;
+  padding: 0 16px;
 }
-.header_nav ul li:last-child {
+.header_nav_container li:last-child {
   border-right: none;
 }
-.header_nav ul li a {
+.header_nav_container li a {
   color: white;
   display: block;
   font-family: "Open sans", Verdana, sans-serif;
@@ -63,16 +97,12 @@ p {
   text-align: center;
   text-decoration: none;
 }
-.header_nav ul li a:hover:not(.active) {
+.header_nav_container li a:hover:not(.active) {
   background-color: #333;
   transition-duration: 300ms;
 }
 .active {
   background-color: #39b54a !important;
-}
-
-svg {
-  margin-left: 1em;
 }
 
 .products {
@@ -138,12 +168,8 @@ svg {
 }
 
 @media screen and (min-width: 800px) {
-  .header {
+  header {
     height: 72px;
-  }
-
-  .header_nav {
-    position: sticky;
   }
 
   .header_nav_items.right,
