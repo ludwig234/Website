@@ -7,6 +7,10 @@
 	<link href="files/style.css" rel="stylesheet" type="text/css">
 	<link href="files/pictures/iors-it-icon.png" rel="shortcut icon" sizes="16x16 32x32 64x64 128x128"
 		  type="image/png"/>
+
+	<script src="files/scripts/mclass-min.js"></script>
+	<script src="files/scripts/miq-min.js"></script>
+	<script src="files/scripts/gameoflife.js"></script>
 </head>
 <body>
 <div id="skip"><a href="#content">Skip to Main Content</a></div>
@@ -19,12 +23,40 @@
 		<ul class="header_nav_list">
 			<li class="header_nav_item"><a href="home.html">Home<span class="header__nav-indicator"></span></a></li>
 			<li class="header_nav_item"><a href="offers.html">Offers<span class="header__nav-indicator"></span></a></li>
-			<li class="header_nav_item"><a href="about.html">About us<span class="header__nav-indicator"></span></a></li>
-			<li class="header_nav_item  header_nav_item--active"><a href="products.html">Products<span class="header__nav-indicator"></span></a></li>
+			<li class="header_nav_item"><a href="about.html">About us<span class="header__nav-indicator"></span></a>
+			</li>
+			<li class="header_nav_item  header_nav_item--active"><a href="products.html">Products<span
+					class="header__nav-indicator"></span></a></li>
 		</ul>
 	</nav>
 </header>
+<div id="canvas-container">
+	<div id="canvas-div">
+		<canvas height="506" width="803"></canvas>
+	</div>
+
+	<form>
+		<select id="shapes">
+			<option>Clear</option>
+			<option>Glider</option>
+			<option>Small Exploder</option>
+			<option>Exploder</option>
+			<option>10 Cell Row</option>
+			<option>Lightweight spaceship</option>
+			<option>Tumbler</option>
+			<option>Gosper Glider Gun</option>
+		</select>
+		<input id="next" type="button" value="Next">
+		<input id="start" type="button" value="Stop">
+		<img alt="" height="20" src="pix/speeddial.svg" width="20">
+		<input id="speed" max="500" min="10" step="49" title="speed dial" type="range" value="10">
+		<img alt="" height="20" src="pix/grid.svg" width="20">
+		<input id="size" max="11" min="2" title="grid size" type="range" value="2">
+		<label id="generation">139</label>
+	</form>
+</div>
 <section id="content">
+
 	<div class="products">
 
 		<div class="product">
