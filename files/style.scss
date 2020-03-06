@@ -59,12 +59,22 @@ header {
 	height: 72px;
 	margin-right: auto;
 	padding-left: 24px;
+	text-decoration: none;
 
-	@at-root .svg_logo {
+	@at-root .header_logo {
 	  display: block;
-	  height: 32px;
-	  margin-right: 16px;
 	  width: 32px;
+	  height: 32px;
+	  background: url('pictures/Iors_it_sheet.png') 100% 50%/auto 100% no-repeat;
+	  animation:play_logo 1s steps(100) forwards;
+	  background-position:0 50%;
+
+	  @keyframes play_logo {
+		100% {
+		  background-position:100% 50%
+		}
+	  }
+
 	}
 	@at-root .header_Title {
 	  font-size: 16px;
